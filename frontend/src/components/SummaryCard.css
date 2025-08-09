@@ -1,0 +1,167 @@
+/* ===== Summary Cards ===== */
+.summary-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #dfe3e7, #ffffff);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+.summary-card:nth-child(1) { background: linear-gradient(135deg, #6dd5fa, #2980b9); color: rgb(243, 240, 240); }
+.summary-card:nth-child(2) { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+.summary-card:nth-child(3) { background: linear-gradient(135deg, #96e6a1, #d4fc79); }
+.summary-card:nth-child(4) { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
+.summary-card:nth-child(5) { background: linear-gradient(135deg, #cfd9df, #e2ebf0); }
+.summary-card:nth-child(6) { background: linear-gradient(135deg, #fddb92, #d1fdff); }
+.summary-card:nth-child(7) { background: linear-gradient(135deg, #c9ffbf, #ffafbd); }
+.summary-card:nth-child(8) { background: linear-gradient(135deg, #d299c2, #fef9d7); }
+
+.summary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.summary-card h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.value, .symbol {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.positive {
+  color: #27ae60;
+}
+
+.negative {
+  color: #e74c3c;
+}
+
+/* ===== Holdings Table ===== */
+.holdings-container {
+  background: white;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.holdings-container h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.holdings-table th {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+}
+
+.holdings-table td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+}
+
+.holdings-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.holdings-table tr:hover {
+  background-color: #eaf2f8;
+}
+
+.text-green {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.text-red {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* AllocationChart styling */
+.allocation-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.chart-box {
+  background: #ffffff;
+  border-radius: 150px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.chart-box:hover {
+  transform: translateY(-5px);
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  padding: 20px;
+}
+
+/* Performance Chart styling */
+.chart-box {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.chart-box:hover {
+  transform: translateY(-5px);
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  padding: 20px;
+}
