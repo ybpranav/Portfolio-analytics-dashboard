@@ -17,24 +17,6 @@ Built with **React** (frontend) and **Node.js + Express** (backend).
 
 ---
 
-## 📂 Project Structure
-```
-portfolio/
-│
-├── backend/       # Node.js + Express API
-│   ├── server.js
-│   ├── routes/
-│   └── data/
-│
-├── frontend/      # React frontend
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-└── README.md
-```
-
----
 
 ## 🛠️ Installation & Setup
 
@@ -82,24 +64,11 @@ http://localhost:5000/api/portfolio/summary
 cd frontend
 npm start
 ```
-Runs at **http://localhost:3000** by default.  
+
 
 ---
 
-## 🌐 Connecting Frontend & Backend
 
-- The **frontend** fetches data from **http://localhost:5000**.
-- To avoid CORS issues, add this to `frontend/package.json`:
-```json
-"proxy": "http://localhost:5000"
-```
-Then in your React code, you can call:
-```js
-fetch("/api/portfolio/summary")
-```
-without hardcoding the full URL.
-
----
 
 
 ## 🧩 Tech Stack
